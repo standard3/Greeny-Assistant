@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css"></link>
     <title>Greeny</title>
+
   </head>
   <body>
     <div class="topnav">
@@ -19,9 +20,16 @@
     We are using Node.js <span id="node-version"></span>,
     Chromium <span id="chrome-version"></span>,
     and Electron <span id="electron-version"></span>.<br/>
-    <a href="https://https://github.com/cynikkk/Greeny-Assistant">Github repo</a>
+    <a href="https://github.com/cynikkk/Greeny-Assistant" target="_blank">Github repo</a> <br/>
+    Discord: discord.gg/Su3ESJ3
     </p>
     <!-- You can also require other files to run in this process -->
+    <script>
+      $(document).on('click', 'a[href^="http"]', function(event) {
+        event.preventDefault();
+        shell.openExternal(this.href);
+      });
+    </script>
     <script src="./renderer.js"></script>
   </body>
 </html>
