@@ -27,14 +27,16 @@ a{
     color: #FCEFF9;
     text-align: center;
     padding: 5px 10px;
+    border-bottom: 2px solid #454851;
     text-decoration: none;
     font-size: 17px;
   }
-  .topnav a:hover {
-    background-color: #FCEFF9;
-    color: black;
-  }
   .topnav a.active {
-    background-color: #73956F;
     color: white;
+    border-bottom-color: #7BAE7F;
+  }
+    .topnav a:hover {
+    background-color: #FCEFF9;
+    border-bottom-color: #FCEFF9;
+    color: black;
   }
