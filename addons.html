@@ -8,32 +8,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/style.css"></link>
     <title>Greeny</title>
-
   </head>
   <body>
     <nav class="nav">
       <div class="nav__title">Greeny</div>
       <ul class="nav__list">
         <li class="nav__item"><a href="index.html">Home</a></li>
-        <li class="nav__item"><a href="addons.html">Addons</a></li>
+        <li class="nav__item"><a class="active" href="#">Addons</a></li>
         <li class="nav__item"><a href="settings.html">Settings</a></li>
-        <li class="nav__item"><a class="active" href="#">About</a></li>
+        <li class="nav__item"><a href="about.html">About</a></li>
       </ul>
     </nav>
     <p>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.<br/>
-    <a href="https://github.com/cynikkk/Greeny-Assistant" target="_blank">Github repo</a> <br/>
-    Discord: discord.gg/Su3ESJ3
+      Nothing to see here for now c:
     </p>
-    <!-- You can also require other files to run in this process -->
-    <script>
-      $(document).on('click', 'a[href^="http"]', function(event) {
-        event.preventDefault();
-        shell.openExternal(this.href);
-      });
-    </script>
     <script src="./renderer.js"></script>
   </body>
 </html>

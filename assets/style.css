@@ -1,0 +1,76 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,500,80);
+
+/* Color palette
+
+Charcoal        : #292A30
+Russian Green   : #73956F
+Dark See Green  : #7BAE7F
+Turquoise Green : #95D7AE
+Lavender Blush  : #FCEFF9
+Light ... Blue  : #88CCF1
+
+*/
+
+
+body {
+  background-color: #292A30;
+  color: #FCEFF9;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0px;
+}
+
+p {
+  margin: 10px;
+}
+
+a {
+  color:#88CCF1;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+.nav {
+  background-color:#27282c;
+	position: sticky;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 70px;
+  top: 0;
+  border-bottom-color: #7BAE7F !important;
+  font-family: Montserrat, sans-serif;
+}
+
+.nav__title {
+  margin: 0px 30px;
+  text-align: left;
+  padding-left: 1%;
+  color: #7BAE7F;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Montserrat, sans-serif;
+}
+
+
+.nav__item {
+  display: inline-block;
+  margin: 0px 10px;
+  color: #FCEFF9;
+  text-align: center;
+  text-decoration: none;
+  padding: 5px 10px;
+  font-size: 18px;
+}
+
+a.active {
+  color: white;
+  border-bottom: 2px solid #7BAE7F;
+}
+
+a:hover {
+  background-color: #FCEFF9;
+  border-bottom-color: #FCEFF9;
+  color: black;
+}
