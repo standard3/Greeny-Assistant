@@ -9,9 +9,15 @@ function createWindow () {
     height: 720,
     titleBarStyle: 'customButtonsOnHover',
     frame : false,
+    show : false,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
+  })
+
+  // Wait until the window is ready to show to show-up
+  mainWindow.once('ready-to-show', () => {
+    mainWindow.show()
   })
 
   // and load the index.html of the app.
