@@ -7,15 +7,11 @@ function createWindow () {
   const mainWindow = new BrowserWindow({
     width: 1280,
     height: 720,
-    titleBarStyle: 'customButtonsOnHover',
-    frame: false,
-    show: false,
-    /*icon: 'images/icon.ico',*/
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
-    }
+    },
+    show: false
   })
-  /*console.log(appIcon, win)*/
 
   // Wait until the window is ready to show to show-up
   mainWindow.once('ready-to-show', () => {
