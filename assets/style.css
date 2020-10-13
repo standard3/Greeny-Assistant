@@ -10,8 +10,26 @@ Lavender Blush  : #FCEFF9
 Light ... Blue  : #88CCF1
 
 */
+.chrome {
+  height: 30px;
+  background-color: #292A30;
+}
 
+#close-img {
+  width: 1.2em;
+}
 
+#close-btn {
+  width: 1em;
+  position: absolute;
+  top: 5px;
+  right: 14px;
+  border: none;
+}
+
+#close-btn:hover {
+  color: #88CCF1;
+}
 
 body {
   background-color: #292A30;
