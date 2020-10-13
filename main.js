@@ -5,13 +5,16 @@ const path = require('path')
 function createWindow () {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
+    backgroundColor: "#292A30",
     width: 1280,
     height: 720,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     },
-    show: false
+    show: true
+    
   })
+
 
   // Wait until the window is ready to show to show-up
   mainWindow.once('ready-to-show', () => {
@@ -24,6 +27,11 @@ function createWindow () {
 
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
+
+  mainWindow.on('close', function(e) {
+    const { dialog } = require('electron');
+      dialog.showMessageBoxSync(null,{type:"question",buttons:["OK"] ,message:"This message is supposed to say that the system tray will still be up" });
+    });
 }
 
 // This method will be called when Electron has finished
@@ -39,12 +47,15 @@ app.whenReady().then(() => {
   })
 })
 
+
+
 // Quit when all windows are closed, except on macOS. There, it's common
 // for applications and their menu bar to stay active until the user quits
 // explicitly with Cmd + Q.
 app.on('window-all-closed', function () {
   if (process.platform !== 'darwin') app.quit()
 })
+
 
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
