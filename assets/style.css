@@ -12,6 +12,7 @@ Light ... Blue  : #88CCF1
 */
 
 
+
 body {
   background-color: #292A30;
   color: #FCEFF9;
@@ -32,6 +33,8 @@ a:link {
 }
 
 .nav {
+  -webkit-app-region: drag; /* Enables drag-on-click on the nav */
+  -webkit-user-select: none; /* Removes selectable text on the nav */
   background-color:#27282c;
 	position: sticky;
 	display: flex;
@@ -53,6 +56,9 @@ a:link {
   font-family: Montserrat, sans-serif;
 }
 
+.nav__list {
+  -webkit-app-region: no-drag; /* If not added, buttons not clickable on the nav */
+}
 
 .nav__item {
   display: inline-block;
