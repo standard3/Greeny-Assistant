@@ -199,8 +199,8 @@ a:link {
   font-size: 20px;
   margin-right: 10px;
   padding: 22px 18px;
-  border-bottom: solid 3px #27282c;
-  color: #7BAE7F;
+  border-bottom: solid 3px #7BAE7F;
+  color: rgb(150, 150, 150);
   transition: border-color 250ms ease-in-out;
 }
 
@@ -209,21 +209,21 @@ a:link {
   border-color: #7BAE7F;
 }
 
-/*.nav__item a:after {
+.nav__item a:after {
   display: block;
   content:'';
-  border-bottom: solid 3px #7BAE7F;
+  border-bottom: solid 2px #7BAE7F;
   transition: transform 250ms ease-in-out;
   transform: scaleX(0) scaleY(0.5);
 }
 
 .nav__item a:hover:after {
   transform: scaleX(1) scaleY(1);
-}*/
-
+}
 
 .nav__item a:hover {
   background-color: #292A30;
   border-color: #7BAE7F;
+  border-spacing: 30px;
   color: white;
 }
