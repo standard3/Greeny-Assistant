@@ -1,21 +1,22 @@
 {
-  "name": "electron-quick-start",
-  "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "name": "Greeny",
+  "version": "0.0.1",
+  "description": "Modular vocal assistant",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/cynikkk/Greeny-Assistant",
   "keywords": [
     "Electron",
     "quick",
     "start",
-    "tutorial",
-    "demo"
+    "vocal",
+    "assistant",
+    "modular"
   ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "author": "cynikk, Seliaste and Umbe",
+  "license": "GPL-3.0",
   "devDependencies": {
     "electron": "^10.1.3"
   }
