@@ -9,6 +9,7 @@ function createWindow () {
     width: 1280,
     height: 720,
     frame: false,
+    icon: __dirname + "/images/logo.ico",
     webPreferences: {
       preload: path.join(__dirname, 'preload.js'),
       nodeIntegration: true,
@@ -27,7 +28,7 @@ function createWindow () {
   mainWindow.setMenu(null)
 
   // Open the DevTools.
-   mainWindow.webContents.openDevTools()
+  // mainWindow.webContents.openDevTools()
 
   mainWindow.on('close', function(e) {
     const { dialog } = require('electron');
