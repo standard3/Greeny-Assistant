@@ -9,6 +9,7 @@ Light ... Blue  : #88CCF1
 
 */
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Righteous);
 
 * {margin: 0; padding: 0; border: 0; vertical-align: baseline;}
 html {box-sizing: border-box;}
@@ -182,8 +183,8 @@ a:link {
   padding-left: 1%;
   color: #7BAE7F;
   font-size: 35px;
-  font-weight: bold;
-  font-family: Montserrat, sans-serif;
+  font-weight: normal;
+  font-family: Righteous, sans-serif;
 }
 
 .nav__item {
@@ -191,34 +192,22 @@ a:link {
   color: #FCEFF9;
   text-align: center;
   text-decoration: none;
-  font-size: 20px;
+  font-family: Montserrat, sans-serif;
 }
 
 .nav__item a {
   display: inline-block;
-  font-size: 20px;
+  font-size: 18px;
   margin-right: 10px;
   padding: 22px 18px;
-  border-bottom: solid 3px #7BAE7F;
   color: rgb(150, 150, 150);
   transition: border-color 250ms ease-in-out;
 }
 
 .nav__item a.active{
   color: white;
+  border-bottom: solid 3px #7BAE7F;
   border-color: #7BAE7F;
-}
-
-.nav__item a:after {
-  display: block;
-  content:'';
-  border-bottom: solid 2px #7BAE7F;
-  transition: transform 250ms ease-in-out;
-  transform: scaleX(0) scaleY(0.5);
-}
-
-.nav__item a:hover:after {
-  transform: scaleX(1) scaleY(1);
 }
 
 .nav__item a:hover {
