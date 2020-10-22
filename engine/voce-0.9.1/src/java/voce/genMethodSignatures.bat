@@ -1,1 +1,0 @@
-javap -s -p SpeechInterface SpeechSynthesizer SpeechRecognizer Utils
