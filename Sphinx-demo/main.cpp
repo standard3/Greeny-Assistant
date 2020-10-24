@@ -1,5 +1,4 @@
 #include <pocketsphinx.h>
-#include <windows.h>
 
 #define MODELDIR "../Sphinx/pocketsphinx-5prealpha/model"
 
